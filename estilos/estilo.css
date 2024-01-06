@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    margin: 0; /* Eliminar el margen por defecto */
+    padding-top: 60px; /* Espacio para la barra de navegación fija */
+}
+
+/* Estilos para la barra de navegación fija */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 50px; /* Ajustar según el tamaño del logo */
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin-right: 50px;
+    padding: 0;
+}
+
+.menu li {
+    margin-left: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.menu li a:hover {
+    color: #000;
+}
+
+/* Estilos para el contenido */
+header {
+    display: flex;
+    background-color: #f8f8f8;
+    align-items: center;
+    padding: 60px;
+}
+
+.presentacion {
+    width: 50%;
+    padding: 20px;
+}
+
+.presentacion p {
+    color: #666;
+}
+
+.photo {
+    width: 50%;
+    text-align: center; /* Centrar la foto */
+}
+
+.photo img {
+    width: 50%; /* Ajustar según el tamaño de la foto */
+}
+
+/* Estilos para la sección de contacto */
+#contacto {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Centrar el contenido */
+    padding: 20px;
+}
+
+#contacto a {
+    color: blue;
+}
+
+/* Estilos para los trabajos */
+
+#proyectos {
+    background-color: #f8f8f8;
+    padding: 100px;
+}
+
+#proyectos h2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.proyecto {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Espacio entre proyectos */
+}
+
+.proyecto img {
+    width: 150px; /* Ajusta según tus necesidades */
+    height: 150px; /* Ajusta según tus necesidades */
+    margin-right: 60px; /* Espacio entre la imagen y la información del proyecto */
+}
+
+.proyecto .info h3 {
+    margin-top: 0;
+    padding-left: 150px;
+}
+
+.proyecto .info p {
+    color: #666;
+    margin-top: 5px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para dispositivos con pantalla hasta 600px */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .menu {
+        flex-direction: column;
+        margin-right: 0;
+    }
+
+    .menu li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    header {
+        flex-direction: column;
+    }
+
+    .presentacion {
+        width: 100%;
+    }
+
+    .photo {
+        width: 100%;
+    }
+
+    .photo img {
+        width: 70%;
+    }
+
+    .proyecto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .proyecto img {
+        width: 100px;
+        height: 100px;
+        margin-right: 0;
+    }
+
+    .proyecto .info h3 {
+        padding-left: 0;
+    }
+
+    .proyecto .info p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
